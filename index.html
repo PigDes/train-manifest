@@ -6,6 +6,59 @@
 		<link type="text/css" rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		
+		<div id="car-form-div">
+			<form>
+				
+				<label for="car-type">Select car type</label>
+				<select id="car-type">
+					<option>Boxcar</option>
+					<option>Hopper</option>
+					<option>Tank Car</option>
+					<option>Well Car</option>
+					<option>Flat Car</option>
+					<option>Autorack</option>
+				</select><br>
+
+				<label for="reporting-mark">Select reporting mark</label>
+				<select id="reporting mark">
+					<option>NS</option>
+					<option>CSXT</option>
+					<option>BNSF</option>
+					<option>UP</option>
+					<option>CN</option>
+					<option>CP</option>
+				</select><br>
+
+				<label for="car-number">Type in car number</label>
+				<input id="car-number"><br>
+
+				<label for="car-axles">Select number of axles</label>
+				<select id="car-axles">
+					<option value="2">2</option>
+					<option value="4">4</option>
+				</select><br>
+
+				<label for="cago-type">Type in cargo type</label>
+				<input id="cargo-type"><br>
+
+				<label for="cargo-weight">Type in cargo weight
+				<input id="cargo-weight"><br>
+
+				<button id="submit-button">Submit car for a manifest</button>
+			</form>
+		<div id="car-list"></div>
+		<script>
+			let manifestList;
+
+			function clearInput () {
+				document.querySelector("car-axles").value = '';
+				document.querySelector("cargo-weight").value= '';
+			}
+
+			function addToManifest () {
+
+			}
+
+		</script>	
 	</body>
 </html>
